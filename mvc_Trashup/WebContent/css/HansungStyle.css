@@ -1,0 +1,540 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+	margin:0;
+  font-family: Arial;
+  background: #f6f6f6;
+}
+
+
+.imgCircle {
+	border-radius: 5px;
+}
+
+.likeButton {
+	font-family: 'pangolin', cursive;
+	color:#363636;
+	font-size:20px;
+	padding:5px
+}
+
+/* Header/Blog Title */
+.header {
+	padding:3px;
+	padding-left:26%;
+  	text-align: left;
+  	background: #ffffff;
+  	width:100%; 
+  	min-width:248px;
+  	height:55px;
+}
+
+.header p {
+	font-size: 30px;
+	color:#05293f;
+	margin-top:6px;
+	font-weight:bold;
+	font-family: 'pangolin', cursive;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+	padding-left:25%;
+	padding-right:23%;
+	font-weight:bold;
+  	overflow: hidden;
+  	background-color: #e7e7e7;
+  	font-family: 'pangolin', cursive;
+  	width:100%;
+  	position: abolute;
+	z-index : 3
+}
+
+
+
+/* Style the topnav links */
+.topnav a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 7px 15px;
+  padding-bottom: 6px;
+  text-decoration: none;
+}
+
+.topnav .fichIcon{
+	padding-bottom: 2px;
+	padding-top: 6px;
+}
+
+.topnavFixed {
+   position: fixed;
+   top: 0px;
+}
+
+.rowScroll{
+	margin-top:70px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ffffff;
+  transform: scale(1.5);
+}
+
+.topnavLeft {
+	float:left;
+}
+
+.topnavRight {
+	float: right;
+}
+
+/* topnav 아이콘 */
+.topnavIcon{
+	width:25px;
+	height:25px;
+	margin-top:2px;
+}
+
+.modal:target {
+	display: table;
+	position: absolute;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width : 100%;
+	height: 100%;
+	overflow : auto;
+	background-color: rgba(0, 0, 0, 0.4)
+}
+
+.modal-dialog {
+	display: table-cell;
+	vertical-align : middle;
+}
+
+
+.modal-dialog .container {
+	margin : auto;
+	width : 30%;
+	height: 200px;
+	background-color : #ffffff;
+	position : relative;
+	padding : 0;
+	border : 1px solid #777;
+	box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0.19);
+}
+
+.container {
+	min-width: 240px;
+}
+
+.loginCon {
+	padding-left: 13%;
+	padding-right: 13%;
+	clear: both;
+}
+
+.menuRight {
+	float:right;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  width: 600px;
+  padding: 0;
+  margin: auto;
+  
+}
+
+/* 메인페이지 카드 레프트 */
+
+.leftcolumn h3 {
+	margin-top:0 !important;
+}
+
+.middleColum h3 {
+	margin-top:0 !important;
+}
+
+/* Right column */
+.rightcolumn {
+	position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left:0.5%; 
+    float: left;
+    padding: 0;  
+    width: 300px;
+}
+
+.rightCard {
+	position: fixed;
+	top:100px;
+	width: 300px;
+}
+
+
+.middleColum {
+	width: 600px;
+  padding: 0;
+  margin: auto;
+}
+
+.h1Reg, .formSet {
+	padding-left: 9%;
+}
+
+.nodeco {
+  text-decoration: none;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+}
+
+.fakeimg p {
+	padding-top:20px;
+}
+
+/* Add a card effect for articles */
+.card {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+	border-radius:5px;
+	background-color:white;
+  	padding: 20px;
+  	margin:auto;
+  	margin-top:10px;
+  	margin-bottom:15px;
+}
+
+.cardReg {
+  	width: 500px;
+  	height: 600px;
+	min-width: 355px;
+	clear:both;
+}
+
+
+/* 마이페이지 카드 */
+.cardMypage {
+	width: 500px;
+  	height: 100%;
+	min-width: 355px;
+	clear:both;
+	
+}
+
+/* 게시물 등록 페이지 */
+.cardBoardReg {
+	width: 600px;
+  	height: 100%;
+	min-width: 355px;
+	clear:both;
+}
+
+
+.cardReg2 {
+  width: 500px;
+  height: 800px;
+	min-width: 355px;
+	clear:both;
+}
+
+#memRegInput input {
+	margin-bottom: 20px;
+}
+
+.row {
+	min-height: 100vh;
+}
+
+
+.close-modal {
+  float: right;
+  text-decoration: none;
+  color: #3e3e3e;
+}
+
+.close-modal:hover {
+  color: #f3ba21;
+}
+
+
+/* 메이페이지 게시글 정보 */
+.myBoardStyle a{
+	color:#505050;
+  text-align: center;
+  text-decoration: none;
+	
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+	margin-top:auto;
+  padding-top: 10px;
+  text-align: center;
+  background: #d7d7d7;
+  margin-top: 20px;
+  color:#797979;
+  position: relative;
+  bottom:0;
+  claer: both;
+}
+
+/* 등록 게시물 이미지 미리보기 */
+
+#image_container img {
+	width:100%;
+	height:100%;
+}
+
+#image_container {
+	max-width:600px; 
+	height:300px; 
+	border:1px solid #e8e8e8;
+	
+}
+
+#middleText {
+	text-align: center;
+	color: #e8e8e8;
+	font-size: 100px;
+	margin-left:30%;
+	margin-top:30%;	
+}
+
+
+/* 마이 게시물 스타일 */
+.noticeCnt {
+	clear:both;
+}
+
+/* 게시물 전체 div */
+.myBoardAll {
+	margin-left:50px;
+}
+
+.myBoardStyle {
+	border:0.8px solid #e8e8e8;
+	border-collapse:collapse;
+	width:120px;
+	height:120px;
+	float:left;	
+}
+
+.noticePageStyle {
+	clear:both;
+}
+
+/* 마이페이지 비밀번호 스타일 */
+.pwCheck {
+	margin-top:50px;
+}
+
+/* 마이게시물 페이지 수정,삭제 버튼*/
+.boardModify_cancel {
+	float:right;
+	display: block;
+  text-align: center;
+  margin-left: 15px;
+  font-weight:bolder;
+}
+
+.boardModify_cancel:hover {
+  color: #808080;
+}
+
+
+/* 입력란 스타일*/
+input {
+	height:40px;
+	margin-bottom:5px;
+}
+
+
+/*지도 페이지*/
+.cardMap {
+	margin:auto;
+	width: 97%;
+	
+}
+
+.cardMapRight {
+	position: absolute;
+	top:120px;
+	left:2%;
+	width: 300px;
+	z-index : 1;
+	
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media all and (max-width: 519px) {
+    .cardReg {   
+    width:98%;
+
+  }
+  	.cardBoardReg {   
+    width:98%;
+  }
+  	.cardMypage{
+  	width:98%;
+  }
+}
+
+@media all and (max-width: 620px) {
+  	.cardBoardReg {   
+    width:98%;
+  }
+}
+
+@media all and (max-width: 548px) {
+  	.cardBoardReg {   
+    width:98%;
+  }
+  
+  	#middleText{
+  	font-size:70px;
+  	}
+}
+
+@media all and (max-width: 635px) {
+ 	.leftcolumn {   
+    width: 98%;
+  }
+  
+  .topnav {
+    padding-right:0;
+  }
+  
+  .row {
+   margin-top:50px;
+  }
+}
+
+@media all and (max-width: 1241px) {
+    .rightcolumn {   
+    display: none; 
+  }
+}
+
+@media all and (min-width: 1225px) {
+    .leftcolumn { 
+ 	float: left;
+    margin-left: 25%;
+  }
+}
+
+
+@media screen and (max-width:346px) {
+  .topnavHidden  {
+    display: none;
+  }
+  .header {
+	padding-left:15%;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .topnav  {
+    float: left;
+    padding:0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .leftcolumn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 636px) and (max-width: 649px) {
+  .topnav {
+    padding-left:5%;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 671px) {
+  .topnav {
+    padding-left:8%;
+  }
+}
+
+@media screen and (min-width: 672px) and (max-width: 719px) {
+  .topnav {
+    padding-left:10%;
+  }
+}
+
+
+@media screen and (min-width: 720px) and (max-width: 870px) {
+  .topnav {
+    padding-left:13%;
+  }
+}
+
+@media screen and (min-width: 871px) and (max-width: 969px) {
+  .topnav {
+    padding-left:17%;
+  }
+}
+
+@media screen and (min-width: 970px) and (max-width: 1070px) {
+  .topnav {
+    padding-left:20%;
+  }
+}
+
+@media screen and (min-width: 636px) and (max-width: 780px) {
+  .topnav {
+    padding-right:3%;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 960px) {
+  .topnav {
+    padding-right:10%;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1190px) {
+  .topnav {
+    padding-right:18%;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .topnavRight {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 1093px) {
+  .modal-dialog .container  {
+    height:225px;
+  }
+}
+

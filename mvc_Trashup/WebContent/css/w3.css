@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* 사이브바 스타일 */
+.w3-bar-block .w3-bar-item {
+	width: 100%;
+	display: block;
+	padding: 8px 16px;
+	text-align: left;
+	border: none;
+	white-space: normal;
+	float: none;
+	outline: 0
+}
+
+/* 사이브바 스타일 */
+.w3-button {
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap
+} 
+
+/*사이드 바 호버*/
+ .w3-button:hover {   
+	color: #4a4a4a!important;
+	background-color: #ffffff!important
+} 
+
+
+/* 사이드 바 세로로 만들어줌 */
+.w3-sidebar {
+	height: 100%;
+	width: 200px;
+	background-color: #fff;
+	position: fixed !important;
+	top: 11.3%;
+	z-index: 1;
+	overflow: auto
+} 
+
+.w3-sidebarScroll {
+	position: fixed !important;
+	top: 5%;
+}
+
+/* 사이드바 칼라 스타일 */
+ .w3-black {
+	color: #4a4a4a!important;
+	background-color: #e7e7e7 !important
+}
+
+/* 사이드바 폰트*/
+.sidebar-font {
+	font-family: 'pangolin', cursive;
+}
+
+/* 사이드바 닫기 버튼 */
+.sidebar-closeButton {
+	font-size: 12px;
+	float: right;
+}
+
+/* 햅버거 버튼 float */
+.w3-right {
+	float: right !important
+}
+
+.w3-animate-left {
+	position: relative;
+	animation: animateleft 0.4s
+} 
+
+@keyframes animateleft {
+	from {
+	left: -300px;
+	opacity: 0
+}
+
+
+to {
+	left: 0;
+	opacity: 1
+}
+
+
+
+ @media ( min-width :436px) and (max-width:601px) {
+ 	.w3-right {
+ 		display:none !important;
+ 	}
+ 	
+	 .w3-hide-medium {
+		display: none !important
+	}
+}
+
+
+ @media ( max-width :992px) {
+ 
+ 	.w3-right {
+ 		display:none !important;
+ 	}
+ 	
+	 .w3-sidebar .w3-collapse  {
+		display: none
+	}
+	 .w3-main {
+		margin-left: 0 !important;
+		margin-right: 0 !important
+	} 
+	 .w3-auto {
+		max-width: 100%
+	}  
+}
+
+ @media ( min-width :993px) {
+ 
+ 	.w3-right {
+ 		display:none !important;
+ 	}
+	
+	 .w3-hide-large {
+		display: none !important
+	}
+	.w3-sidebar .w3-collapse  {
+		display: block !important
+	}
+	
+	.w3-bar-item {
+		diplay: none !important
+	} 
+} 
+
+
