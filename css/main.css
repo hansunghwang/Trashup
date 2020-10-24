@@ -2152,6 +2152,8 @@ header .header-logo a {
 	}
 
 	.about-services ul.services .icon-wrap {
+		text-align:center; 
+		margin:0px auto;
 		position: static;
 		margin-bottom: .6rem;
 	}
@@ -2159,8 +2161,13 @@ header .header-logo a {
 	.about-services ul.services .icon-wrap i {
 		font-size: 6rem;
 	}
+	
+	.about-services ul.services .icon-wrap img {
+		float:none;
+	}
 
 	.about-services ul.services .service-item {
+		clear:both;
 		padding-left: 0;
 		margin-bottom: 3rem;
 	}
