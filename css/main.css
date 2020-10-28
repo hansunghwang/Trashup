@@ -101,7 +101,8 @@ body {
 
 body {
 	background: #050505;
-	font-family: "librebaskerville-regular", serif;
+	/* font-family: "librebaskerville-regular", serif; */
+	font-family: "montserrat-regular", sans-serif;
 	font-size: 1.6rem;
 	line-height: 3rem;
 	color: #353535;
@@ -1952,7 +1953,7 @@ header .header-logo a {
 	height: 100%;
 	background: #EBEBEB;
 	width: 50%;
-	background-image: url(../images/profile-bg.jpg);
+	background-image: url(../images/more_about_me_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -1989,6 +1990,10 @@ header .header-logo a {
 	padding-right: 9rem;
 	position: relative;
 	z-index: 2;
+}
+
+.about-profile p.writing {
+	font-weight: bolder;
 }
 
 .about-profile p.lead {
@@ -2809,7 +2814,7 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 #contact {
 	background-color: #111111;
-	background-image: url(../images/profile-bg.jpg);
+	background-image: url(../images/contact_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -2839,7 +2844,7 @@ header .header-logo a {
 }
 
 #contact .section-intro p.lead {
-	color: rgba(255, 255, 255, 0.3);
+	color: #dbdbdb;
 }
 
 /* contact form */
@@ -3025,7 +3030,7 @@ header .header-logo a {
 }
 
 .contact-info p {
-	color: #555;
+	color: #dbdbdb;
 }
 
 .contact-info .collapse {
